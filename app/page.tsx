@@ -104,8 +104,29 @@ function Home() {
 
 export default function HOME() {
 return (
-  <div className="flex items-center justify-left min-h-screen bg-blue-500 text-white">
-    <h1 className="text-4xl font-bold">Tailwind is working!</h1>
+  <div
+  className="relative h-screen bg-cover bg-center"
+  style={{ backgroundImage: "url('/background.png')" }}>
+    <div className="flex-1 flex flex-col justify-center max-w-lg px-8 pt-8">
+          <h1 className="text-4xl font-semibold leading-tight">
+            Frontier<br /> Intelligence for<br /> Accounting
+          </h1>
+          <p className="mt-6 text-gray-200">
+            The AI platform for world-class tax, audit, and CPA teams. Multi-agent AI support, summarization,
+            and research for Tax, Audit, and CPA Teams.
+          </p>
+
+          <div className="mt-8">
+            <button className="bg-white text-black px-6 py-3 rounded font-medium flex items-center gap-2 hover:bg-gray-200">
+              Book a Demo <span className="text-lg">→</span>
+            </button>
+
+            <p className="mt-4 text-sm flex items-center gap-2">
+              <span className="w-2 h-2 bg-white rounded-full"></span>
+              Announcing our $50 million series B
+            </p>
+          </div>
+        </div>
   </div>
 );
 }
