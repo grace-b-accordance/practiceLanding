@@ -127,6 +127,24 @@ return (
             </p>
           </div>
         </div>
+        {/* Marquee at the bottom left */}
+        <div className="absolute bottom-4 right-4 w-72 overflow-hidden">
+          <div className="marquee whitespace-nowrap flex">
+            {/* Duplicate the items for seamless looping */}
+            <div className="flex">
+              <span className="text-white mx-2"><p>hello</p></span>
+              <span className="text-white mx-2"><p>eye</p></span>
+              <span className="text-white mx-2"><p>am</p></span>
+              <span className="text-white mx-2"><p>max emanuel</p></span>
+            </div>
+            <div className="flex">
+              <span className="text-white mx-2"><p>hello</p></span>
+              <span className="text-white mx-2"><p>eye</p></span>
+              <span className="text-white mx-2"><p>am</p></span>
+              <span className="text-white mx-2"><p>max emanuel</p></span>
+            </div>
+          </div>
+        </div>
   </div>
 );
 }
